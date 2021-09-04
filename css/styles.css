@@ -17,8 +17,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(249, 249, 250, 0.8);
-    background-color: rgba(43, 42, 51, 1);
+    /* color: rgba(249, 249, 250, 0.8); */
+    background-color: var(--lin-grad1);
 }
 
 /* Gives all headers 0 spacing above it for appearance */
@@ -35,18 +35,15 @@ h3 {
 }
 
 /* Hero Styles */
-.heroContainer {
-/* Insert background img desktop design */
-margin-bottom: 60px;
-}
 
-.heroContainer .hero {
+.heroContainer {
     background-image: url("/images/hero-mobile.jpg");
     padding: 35% 0;   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    margin: 0px -7px 60px;
 }
 
 
@@ -54,10 +51,16 @@ margin-bottom: 60px;
 .mainText {
     margin: 25px;
     text-align: center;
+    color: var(--desat-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .mainText .topText {
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     font-weight: 300;
     font-size: 42px;
 }
@@ -65,8 +68,15 @@ margin-bottom: 60px;
 .mainText .comingSoonText {
     margin-top: -23px;
     font-weight: 600;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     font-size: 42px;
+    color: var(--drkgray-red);
+}
+
+.mainText p {
+    font-weight: 400;
+    max-width: 309px;
+  
 }
 
 
@@ -82,20 +92,32 @@ margin-bottom: 60px;
 }
 
 #emailInput {
-    padding: 10px 44px;
+    padding: 14px 80px;
     border-radius: 34px;
+    border-color: var(--soft-red);
 }
+
+
 
 #emailButton {
     position: absolute;
-    transform: translateX(-49%)translateY(-4%);
-    padding: 10px 30px;
+    transform: translateX(-97%)translateY(3%);
+    padding: 12px 30px;
     border-radius: 34px;
+    border-style: none;
+    background: var(--lin-grad2);
     
 }
 
 .errorMessage {
+    color: var(--soft-red);
     text-align: start;
+    margin: 5px 0px 0px 40px
+}
+
+#errorIcon  {
+    position: absolute;
+    transform: translateX(180%)translateY(-245%);
 }
 
 
@@ -105,13 +127,14 @@ margin-bottom: 60px;
     body {
         color: red;
     }
-    .heroContainer .hero {
+    .heroContainer {
         background-image: url("/images/hero-desktop.jpg");
         height: 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         position: relative;
+        
     }
 }
 
