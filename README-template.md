@@ -6,19 +6,22 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
+mobile
+![image](https://user-images.githubusercontent.com/76195521/132263564-f151d03a-8159-4b05-afb0-01543bd50ce1.png)
+desktop
+![image](https://user-images.githubusercontent.com/76195521/132263605-8947f829-5cad-44cc-8fe5-ad65ef0aafe3.png)
+desktop (active)
+![image](https://user-images.githubusercontent.com/76195521/132263628-71654b2f-7140-4b39-9177-d06a207331a1.png)
 
 ### The challenge
 
@@ -30,85 +33,89 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+1. html structure prep for flexbox and positionin
+2. style for mobile design first
+3. style for desktop desgin
+4. js logic 
+5. adjust final sizing for commit
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- vanilla JS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+flexbox reorder and grow practice
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+/* flexbox */
+  .mainContainer {
+        display: flex;
+        background-image: url("/images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .heroContainer {
+        background-image: url("/images/hero-desktop.jpg");
+        padding: 0;
+        margin: 0px 0px 0px;
+        height: 100vh;
+        order: 4;
+        flex-grow: 4;
+        max-width: 702px;
+    }
+    .mainText {
+        flex-grow: 1;
+        text-align: left;
+    }
 ```
+DOM, functions, eventlisteners practice
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+// captured variables
+const emailButton = document.getElementById('emailButton');
+
+
+// checks user input and test for email validation 
+ function emailValidation() {
+     const emailInput  = document.getElementById('emailInput').value;
+     const regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+     const errorContainer = document.querySelector('.errorContainer');
+
+     if (regx.test(emailInput)){
+         alert("thank you");
+         errorContainer.className = "errorContainer";
+     } else {
+         errorContainer.className = "errorContainerShow";
+     }
+ }
+
+// Waits for click to run function emailValidation()
+ emailButton.addEventListener('click', emailValidation)
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
+margin or padding issue? 
+![image](https://user-images.githubusercontent.com/76195521/132263991-fad5dfae-3681-4687-9ed5-38c1228d84e5.png)
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+restructure html container?
+![image](https://user-images.githubusercontent.com/76195521/132264045-4b948460-566f-4e3b-b965-18133870ce40.png)
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/T4R0TARO)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
