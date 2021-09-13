@@ -16,33 +16,33 @@
 
 <div class="mainContainer">
   <!-- Header Logo -->
-  <div class="header">
+  <div role="logo" class="header">
     <img src="images/logo.svg" alt="base apparel logo" >
   </div>
 
   <!-- Header Hero -->
-  <div class="heroContainer">
+  <div role="hero" class="heroContainer">
 
   </div>
 
   <!-- Text Container -->
-  <div class="mainText">
-      <h1 class="topText">WE'RE</h1>
-      <h1 class="comingSoonText">COMING<br>SOON</h1>
-      <p id="descText">
+  <div role="main" class="mainText">
+      <h1 role="heading"class="topText">WE'RE</h1>
+      <h1 role="subHeading"class="comingSoonText">COMING<br>SOON</h1>
+      <p role="pageDescription" id="descText">
         Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
     <!-- Email Form-->
-    <div class="emailContainer">
+    <div role="userInput"class="emailContainer">
 
-        <input id="emailInput" type="text" class="userInput" placeholder="Email Address">
-        <button type="text" id="emailButton" class="email">
+        <input role="userEmail" id="emailInput" type="text" class="userInput" placeholder="Email Address">
+        <button role="submitButton" type="submit" id="emailButton" class="email">
           <img src="images/icon-arrow.svg" alt="submit arrow">
         </button>
-        <div class="errorContainer">
+        <div role="errorMessage" class="errorContainer">
           <p class="errorMessage">Please provide a valid email</p>
-          <img id="errorIcon" src="images/icon-error.svg">
+          <img id="errorIcon" src="images/icon-error.svg" alt="red error icon">
         </div>
       <!-- </form>   -->
     </div>
