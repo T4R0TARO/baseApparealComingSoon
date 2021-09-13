@@ -11,6 +11,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+<<<<<<< HEAD
 
 
 
@@ -25,6 +26,22 @@ desktop (active)
 
 ### The challenge
 
+=======
+- [Author](#author)
+
+
+
+## Overview
+mobile
+![image](https://user-images.githubusercontent.com/76195521/132263564-f151d03a-8159-4b05-afb0-01543bd50ce1.png)
+desktop
+![image](https://user-images.githubusercontent.com/76195521/132263605-8947f829-5cad-44cc-8fe5-ad65ef0aafe3.png)
+desktop (active)
+![image](https://user-images.githubusercontent.com/76195521/132263628-71654b2f-7140-4b39-9177-d06a207331a1.png)
+
+### The challenge
+
+>>>>>>> 87b103b5616d26904f823c3db3ecfae4ead9194e
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
@@ -35,11 +52,19 @@ Users should be able to:
 
 ### Links
 
+<<<<<<< HEAD
 - Solution URL: [Git Hub Repo](https://github.com/T4R0TARO/baseApparealComingSoon)
 - Live Site URL: [GitPages](https://t4r0taro.github.io/baseApparealComingSoon/)
 
 ## My process
 1. html structure prep for flexbox and positionin
+=======
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+1. html structure prep for flexbox and positioning
+>>>>>>> 87b103b5616d26904f823c3db3ecfae4ead9194e
 2. style for mobile design first
 3. style for desktop desgin
 4. js logic 
@@ -113,9 +138,15 @@ restructure html container?
 
 ## Author
 
+<<<<<<< HEAD
 - Website - [Git Hub](https://www.your-site.com)
 - Frontend Mentor - [@T4R0TARO](https://www.frontendmentor.io/profile/T4R0TARO)
 
+=======
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/T4R0TARO)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+>>>>>>> 87b103b5616d26904f823c3db3ecfae4ead9194e
 
 
 
